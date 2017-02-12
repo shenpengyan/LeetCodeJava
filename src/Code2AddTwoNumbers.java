@@ -1,3 +1,4 @@
+import common.ListNode;
 
 /**
  * 2. Add Two Numbers
@@ -16,16 +17,16 @@
  * @author shenpengyan
  *
  */
-public class Code2 {
+public class Code2AddTwoNumbers {
 	public static void main(String[] args) {
-		Code2 code = new Code2();
+		Code2AddTwoNumbers code = new Code2AddTwoNumbers();
 		Solution sol = code.new Solution();
-		ListNode l1 = code.new ListNode(2);
-		l1.next = code.new ListNode(4);
-		l1.next.next = code.new ListNode(3);
-		ListNode l2 = code.new ListNode(5);
-		l2.next = code.new ListNode(6);
-		l2.next.next = code.new ListNode(4);
+		ListNode l1 = new ListNode(2);
+		l1.next = new ListNode(4);
+		l1.next.next = new ListNode(3);
+		ListNode l2 = new ListNode(5);
+		l2.next = new ListNode(6);
+		l2.next.next = new ListNode(4);
 		System.out.println(sol.addTwoNumbers(l1, l2));
 	}
 
@@ -82,25 +83,6 @@ public class Code2 {
 	    	}
 	    	return head.next;
 	    	
-	    }
-	}
-
-	class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
-		
-	    public String toString(){
-	    	if(next == null){
-		    	return val + "";
-	    	}
-	    	else
-	    	{
-	    		return val + "->" + next.toString();
-	    	}
 	    }
 	}
 

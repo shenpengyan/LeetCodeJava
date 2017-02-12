@@ -15,9 +15,9 @@ import java.util.Map;
  *
  */
 
-public class Code1 {
+public class Code1TwoSum {
 	public static void main(String[] args) {
-		Code1 code = new Code1();
+		Code1TwoSum code = new Code1TwoSum();
 		Solution sol = code.new Solution();
 		int[]resInts = sol.twoSum(new int[] { 1, 5, 4 }, 5);
 		for (int i : resInts) {

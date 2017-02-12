@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /**
  * 
  * 19. Remove Nth Node From End of List
@@ -23,8 +25,8 @@ public class Code19 {
 	public static void main(String[] args) {
 		Code19 code = new Code19();
 		Solution sol = code.new Solution();
-		ListNode head = code.new ListNode(1);
-		head.next = code.new ListNode(2);
+		ListNode head = new ListNode(1);
+		head.next = new ListNode(2);
 		System.out.println(sol.removeNthFromEnd(head, 2));
 	}
 
@@ -50,16 +52,6 @@ public class Code19 {
 			return head;
 		}
 
-	}
-
-	// Definition for singly-linked list.
-	public class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
 	}
 
 }
